@@ -17,38 +17,38 @@ tags:
   - deep-learning
   - computer-vision
 leaderboard:
-  - id: 1
-    schema:
-      {
-        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
-        "default_order_by": "Total",
-        "metadata": {
-          "Metric1": {
-            "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          "Metric2": {
-            "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          }
-        }
-      }
   # - id: 1
   #   schema:
   #     {
-  #       "labels": ["ACC"],
-  #       "default_order_by": "ACC",
+  #       "labels": ["Metric1", "Metric2", "Metric3", "Total"],
+  #       "default_order_by": "Total",
   #       "metadata": {
-  #         # "Metric1": {, "Total"
-  #         #   "sort_ascending": True,
-  #         #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  #         # },
-  #         # "Metric2": {
-  #         #   "sort_ascending": True,
-  #         #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  #         # }
+  #         "Metric1": {
+  #           "sort_ascending": True,
+  #           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  #         },
+  #         "Metric2": {
+  #           "sort_ascending": True,
+  #           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  #         }
   #       }
   #     }
+  - id: 1
+    schema:
+      {
+        "labels": ["ACC"],
+        "default_order_by": "ACC",
+        "metadata": {
+          # "Metric1": {, "Total"
+          #   "sort_ascending": True,
+          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          # },
+          # "Metric2": {
+          #   "sort_ascending": True,
+          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          # }
+        }
+      }
   # # - id: 2
   # #   schema:
   # #     {
