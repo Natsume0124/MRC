@@ -39,9 +39,71 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
             'submitted_at': u'2017-03-20T19:22:03.880652Z'
         }
     """
+    # output = {}
+    # if phase_codename == "VG-RS":
+    #     print("Evaluating for VG-RS Phase")
+    #     output["result"] = [
+    #         {
+    #             "train_split": {
+    #                 "Metric1": random.randint(0, 99),
+    #                 "Metric2": random.randint(0, 99),
+    #                 "Metric3": random.randint(0, 99),
+    #                 "Total": random.randint(0, 99),
+    #             }
+    #         }
+    #     ]
+    #     # To display the results in the result file
+    #     output["submission_result"] = output["result"][0]["train_split"]
+    #     print("Completed evaluation for VG-RS Phase")
+    # elif phase_codename == "VQA-SA":
+    #     print("Evaluating for VQA-SA Phase")
+    #     output["result"] = [
+    #         {
+    #             "train_split": {
+    #                 "ACC": random.randint(0, 99),
+    #                 # "Metric2": random.randint(0, 99),
+    #                 # "Metric3": random.randint(0, 99),
+    #                 # "Total": random.randint(0, 99),
+    #             }
+    #         },
+    #         {
+    #             "test_split": {
+    #                 "ACC": random.randint(0, 99),
+    #                 # "Metric2": random.randint(0, 99),
+    #                 # "Metric3": random.randint(0, 99),
+    #                 # "Total": random.randint(0, 99),
+    #             }
+    #         },
+    #     ]
+    #     # To display the results in the result file
+    #     output["submission_result"] = output["result"][0]
+    #     print("Completed evaluation for VQA-SA Phase")
+    # elif phase_codename == "VR-Ads":
+    #     print("Evaluating for VR-Ads Phase")
+    #     output["result"] = [
+    #         {
+    #             "train_split": {
+    #                 "ACC": random.randint(0, 99),
+    #                 # "Metric2": random.randint(0, 99),
+    #                 # "Metric3": random.randint(0, 99),
+    #                 # "Total": random.randint(0, 99),
+    #             }
+    #         },
+    #         {
+    #             "test_split": {
+    #                 "ACC": random.randint(0, 99),
+    #                 # "Metric2": random.randint(0, 99),
+    #                 # "Metric3": random.randint(0, 99),
+    #                 # "Total": random.randint(0, 99),
+    #             }
+    #         },
+    #     ]
+    #     # To display the results in the result file
+    #     output["submission_result"] = output["result"][0]
+    #     print("Completed evaluation for VR-Ads Phase")
     output = {}
-    if phase_codename == "VG-RS":
-        print("Evaluating for VG-RS Phase")
+    if phase_codename == "dev":
+        print("Evaluating for Dev Phase")
         output["result"] = [
             {
                 "train_split": {
@@ -54,51 +116,28 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         ]
         # To display the results in the result file
         output["submission_result"] = output["result"][0]["train_split"]
-        print("Completed evaluation for VG-RS Phase")
-    elif phase_codename == "VQA-SA":
-        print("Evaluating for VQA-SA Phase")
+        print("Completed evaluation for Dev Phase")
+    elif phase_codename == "test":
+        print("Evaluating for Test Phase")
         output["result"] = [
             {
                 "train_split": {
-                    "ACC": random.randint(0, 99),
-                    # "Metric2": random.randint(0, 99),
-                    # "Metric3": random.randint(0, 99),
-                    # "Total": random.randint(0, 99),
+                    "Metric1": random.randint(0, 99),
+                    "Metric2": random.randint(0, 99),
+                    "Metric3": random.randint(0, 99),
+                    "Total": random.randint(0, 99),
                 }
             },
             {
                 "test_split": {
-                    "ACC": random.randint(0, 99),
-                    # "Metric2": random.randint(0, 99),
-                    # "Metric3": random.randint(0, 99),
-                    # "Total": random.randint(0, 99),
+                    "Metric1": random.randint(0, 99),
+                    "Metric2": random.randint(0, 99),
+                    "Metric3": random.randint(0, 99),
+                    "Total": random.randint(0, 99),
                 }
             },
         ]
         # To display the results in the result file
         output["submission_result"] = output["result"][0]
-        print("Completed evaluation for VQA-SA Phase")
-    elif phase_codename == "VR-Ads":
-        print("Evaluating for VR-Ads Phase")
-        output["result"] = [
-            {
-                "train_split": {
-                    "ACC": random.randint(0, 99),
-                    # "Metric2": random.randint(0, 99),
-                    # "Metric3": random.randint(0, 99),
-                    # "Total": random.randint(0, 99),
-                }
-            },
-            {
-                "test_split": {
-                    "ACC": random.randint(0, 99),
-                    # "Metric2": random.randint(0, 99),
-                    # "Metric3": random.randint(0, 99),
-                    # "Total": random.randint(0, 99),
-                }
-            },
-        ]
-        # To display the results in the result file
-        output["submission_result"] = output["result"][0]
-        print("Completed evaluation for VR-Ads Phase")
+        print("Completed evaluation for Test Phase")
     return output
