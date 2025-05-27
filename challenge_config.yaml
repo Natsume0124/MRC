@@ -82,9 +82,9 @@ challenge_phases:
     end_date: 2025-06-15 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
     codename: dev
-    max_submissions_per_day: 5
-    max_submissions_per_month: 50
-    max_submissions: 50
+    max_submissions_per_day: 5000
+    max_submissions_per_month: 5000
+    max_submissions: 5000
     default_submission_meta_attributes:
       - name: method_name
         is_visible: True
@@ -129,9 +129,9 @@ challenge_phases:
     end_date: 2025-06-15 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
     codename: test
-    max_submissions_per_day: 5
-    max_submissions_per_month: 50
-    max_submissions: 50
+    max_submissions_per_day: 5000
+    max_submissions_per_month: 5000
+    max_submissions: 5000
     default_submission_meta_attributes:
       - name: method_name
         is_visible: True
@@ -174,9 +174,9 @@ challenge_phases:
     end_date: 2025-06-15 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
     codename: VR-Ads
-    max_submissions_per_day: 5
-    max_submissions_per_month: 50
-    max_submissions: 50
+    max_submissions_per_day: 5000
+    max_submissions_per_month: 5000
+    max_submissions: 50000
     default_submission_meta_attributes:
       - name: method_name
         is_visible: True
