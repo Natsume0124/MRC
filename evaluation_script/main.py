@@ -42,13 +42,23 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     output = {}
     if phase_codename == "VG-RS":
         print("Evaluating for VG-RS Phase")
+        client = ZhipuAI(api_key=API_KEY)
+        response = client.chat.completions.create(
+            model="glm-4-flash",
+            messages=[
+                {"role": "system", "content": "你是一个智能判断助手，你的任务是根据问题和给出的正确答案，分析模型的预测答案是是否正确回答了问题。如果正确，请回答1；如果错误，请回答0；注意，只能输出0或者1，不允许有任何其他内容输出。正确的预测必须完全符合标准答案的语义，否则被认为错误"},
+                {"role": "user", "content": f"问题是飞机在天上飞？;模型的预测答案是：是的}；正确答案是：是"}
+            ],
+            temperature=0.0,
+        )
+        is_true = response.choices[0].message.content
         output["result"] = [
             {
                 "train_split": {
                     # "Metric1": random.randint(0, 99),
                     # "Metric2": random.randint(0, 99),
                     # "Metric3": random.randint(0, 99),
-                    "ACC": int(9999),
+                    "ACC": int(9999000) + int(is_true),
                 }
             }
         ]
