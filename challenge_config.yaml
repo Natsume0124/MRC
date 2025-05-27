@@ -70,7 +70,7 @@ challenge_phases:
   - id: 1
     name: VG-RS
     description: templates/challenge_phase_1_description.html
-    leaderboard_public: False
+    leaderboard_public: True
     is_public: True
     challenge: 1
     is_active: True
@@ -164,7 +164,7 @@ challenge_phases:
     description: templates/challenge_phase_3_description.html
     leaderboard_public: True
     is_public: True
-    challenge: 2
+    challenge: 3
     is_active: True
     max_concurrent_submissions_allowed: 3
     allowed_email_ids: []
