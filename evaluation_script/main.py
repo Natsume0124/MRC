@@ -40,7 +40,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         }
     """
     output = {}
-    if phase_codename == "dev":
+    if phase_codename == "VG-RS":
         print("Evaluating for Dev Phase")
         output["result"] = [
             {
@@ -55,7 +55,30 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         # To display the results in the result file
         output["submission_result"] = output["result"][0]
         print("Completed evaluation for Dev Phase")
-    elif phase_codename == "test":
+    elif phase_codename == "VQA-SA":
+        print("Evaluating for Test Phase")
+        output["result"] = [
+            {
+                "train_split": {
+                    # "Metric1": random.randint(0, 99),
+                    # "Metric2": random.randint(0, 99),
+                    # "Metric3": random.randint(0, 99),
+                    "ACC": int(999999999),
+                }
+            },
+            # {
+            #     "test_split": {
+            #         # "Metric1": random.randint(0, 99),
+            #         # "Metric2": random.randint(0, 99),
+            #         # "Metric3": random.randint(0, 99),
+            #         "ACC": int(1009999),
+            #     }
+            # },
+        ]
+        # To display the results in the result file
+        output["submission_result"] = output["result"][0]
+        print("Completed evaluation for Test Phase")
+    elif phase_codename == "VR-Ads":
         print("Evaluating for Test Phase")
         output["result"] = [
             {
