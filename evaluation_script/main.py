@@ -1,5 +1,5 @@
 import random
-
+from zhipuai import ZhipuAI
 
 def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwargs):
     print("Starting Evaluation.....")
@@ -41,7 +41,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     """
     output = {}
     if phase_codename == "VG-RS":
-        print("Evaluating for Dev Phase")
+        print("Evaluating for VG-RS Phase")
         output["result"] = [
             {
                 "train_split": {
@@ -56,7 +56,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["submission_result"] = output["result"][0]
         print("Completed evaluation for Dev Phase")
     elif phase_codename == "VQA-SA":
-        print("Evaluating for Test Phase")
+        print("Evaluating for VQA-SA Phase")
         output["result"] = [
             {
                 "train_split": {
@@ -77,9 +77,9 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         ]
         # To display the results in the result file
         output["submission_result"] = output["result"][0]
-        print("Completed evaluation for Test Phase")
+        print("Completed evaluation for VQA-SA Phase")
     elif phase_codename == "VR-Ads":
-        print("Evaluating for Test Phase")
+        print("Evaluating for VR-Ads Phase")
         output["result"] = [
             {
                 "train_split": {
@@ -100,5 +100,5 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         ]
         # To display the results in the result file
         output["submission_result"] = output["result"][0]
-        print("Completed evaluation for Test Phase")
+        print("Completed evaluation for VR-Ads Phase")
     return output
