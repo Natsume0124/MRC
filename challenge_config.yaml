@@ -33,7 +33,7 @@ leaderboard:
           # }
         }
       }
-    - id: 2
+  - id: 2
     schema:
       {
         "labels": ["IOU"],
