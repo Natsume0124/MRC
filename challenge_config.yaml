@@ -20,24 +20,24 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["ACC"],
-        "default_order_by": "ACC",
+        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
+        "default_order_by": "Total",
         "metadata": {
-          # "Metric1": {, "Total"
-          #   "sort_ascending": True,
-          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          # },
-          # "Metric2": {
-          #   "sort_ascending": True,
-          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          # }
+          "Metric1": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Metric2": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
         }
       }
-  # - id: 2
+  # - id: 1
   #   schema:
   #     {
-  #       "labels": ["IOU"],
-  #       "default_order_by": "IOU",
+  #       "labels": ["ACC"],
+  #       "default_order_by": "ACC",
   #       "metadata": {
   #         # "Metric1": {, "Total"
   #         #   "sort_ascending": True,
@@ -49,6 +49,22 @@ leaderboard:
   #         # }
   #       }
   #     }
+  # # - id: 2
+  # #   schema:
+  # #     {
+  # #       "labels": ["IOU"],
+  # #       "default_order_by": "IOU",
+  # #       "metadata": {
+  # #         # "Metric1": {, "Total"
+  # #         #   "sort_ascending": True,
+  # #         #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  # #         # },
+  # #         # "Metric2": {
+  # #         #   "sort_ascending": True,
+  # #         #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  # #         # }
+  # #       }
+  # #     }
 
 challenge_phases:
   - id: 1
@@ -191,7 +207,7 @@ challenge_phases:
     
 dataset_splits:
   - id: 1
-    name: Test Split
+    name: Train Split
     codename: train_split
   - id: 2
     name: Test Split
