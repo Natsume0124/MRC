@@ -65,7 +65,7 @@ challenge_phases:
     start_date: 2025-05-01 00:00:00
     end_date: 2025-06-15 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
-    codename: dev
+    codename: VG-RS
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 50
@@ -112,7 +112,7 @@ challenge_phases:
     start_date: 2025-05-01 00:00:00
     end_date: 2025-06-15 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
-    codename: test
+    codename: VQA-SA
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 50
@@ -142,6 +142,7 @@ challenge_phases:
         type: boolean
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
+    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
   - id: 3
     name: VR-Ads
     description: templates/challenge_phase_3_description.html
@@ -156,7 +157,7 @@ challenge_phases:
     start_date: 2025-05-01 00:00:00
     end_date: 2025-06-15 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
-    codename: hre
+    codename: VR-Ads
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 50
@@ -186,7 +187,8 @@ challenge_phases:
         type: boolean
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
-
+    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
+    
 dataset_splits:
   - id: 1
     name: Test Split
