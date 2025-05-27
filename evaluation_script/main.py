@@ -1,6 +1,6 @@
 import random
 from zhipuai import ZhipuAI
-
+API_KEY = "0c9745f6e0254f41818839057a62025b.EZ6Cq8FgHRPo91fk"
 def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwargs):
     print("Starting Evaluation.....")
     """
