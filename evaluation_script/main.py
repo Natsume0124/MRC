@@ -107,10 +107,10 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["result"] = [
             {
                 "train_split": {
-                    "Metric1": random.randint(0, 99),
-                    "Metric2": random.randint(0, 99),
-                    "Metric3": random.randint(0, 99),
-                    "Total": int(1000),
+                    # "Metric1": random.randint(0, 99),
+                    # "Metric2": random.randint(0, 99),
+                    # "Metric3": random.randint(0, 99),
+                    "ACC": int(9999),
                 }
             }
         ]
@@ -122,18 +122,18 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["result"] = [
             {
                 "train_split": {
-                    "Metric1": random.randint(0, 99),
-                    "Metric2": random.randint(0, 99),
-                    "Metric3": random.randint(0, 99),
-                    "Total": int(1000),
+                    # "Metric1": random.randint(0, 99),
+                    # "Metric2": random.randint(0, 99),
+                    # "Metric3": random.randint(0, 99),
+                    "ACC": int(9999),
                 }
             },
             {
                 "test_split": {
-                    "Metric1": random.randint(0, 99),
-                    "Metric2": random.randint(0, 99),
-                    "Metric3": random.randint(0, 99),
-                    "Total": int(1000),
+                    # "Metric1": random.randint(0, 99),
+                    # "Metric2": random.randint(0, 99),
+                    # "Metric3": random.randint(0, 99),
+                    "ACC": int(9999),
                 }
             },
         ]
