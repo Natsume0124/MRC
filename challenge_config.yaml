@@ -33,22 +33,22 @@ leaderboard:
           # }
         }
       }
-  - id: 2
-    schema:
-      {
-        "labels": ["IOU"],
-        "default_order_by": "IOU",
-        "metadata": {
-          # "Metric1": {, "Total"
-          #   "sort_ascending": True,
-          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          # },
-          # "Metric2": {
-          #   "sort_ascending": True,
-          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          # }
-        }
-      }
+  # - id: 2
+  #   schema:
+  #     {
+  #       "labels": ["IOU"],
+  #       "default_order_by": "IOU",
+  #       "metadata": {
+  #         # "Metric1": {, "Total"
+  #         #   "sort_ascending": True,
+  #         #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  #         # },
+  #         # "Metric2": {
+  #         #   "sort_ascending": True,
+  #         #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  #         # }
+  #       }
+  #     }
 
 challenge_phases:
   - id: 1
