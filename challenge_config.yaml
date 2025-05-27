@@ -70,8 +70,8 @@ challenge_phases:
   - id: 1
     name: VG-RS
     description: templates/challenge_phase_1_description.html
-    leaderboard_public: False
-    is_public: True
+    leaderboard_public: True
+    is_public: False
     challenge: 1
     is_active: True
     max_concurrent_submissions_allowed: 3
@@ -117,8 +117,8 @@ challenge_phases:
   - id: 2
     name: VQA-SA
     description: templates/challenge_phase_2_description.html
-    leaderboard_public: False
-    is_public: True
+    leaderboard_public: True
+    is_public: False
     challenge: 2
     is_active: True
     max_concurrent_submissions_allowed: 3
@@ -162,8 +162,8 @@ challenge_phases:
   - id: 3
     name: VR-Ads
     description: templates/challenge_phase_3_description.html
-    leaderboard_public: False
-    is_public: True
+    leaderboard_public: True
+    is_public: False
     challenge: 3
     is_active: True
     max_concurrent_submissions_allowed: 3
