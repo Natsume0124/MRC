@@ -20,10 +20,26 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["ACC", "Total"],
-        "default_order_by": "Total",
+        "labels": ["ACC"],
+        "default_order_by": "ACC",
         "metadata": {
-          # "Metric1": {
+          # "Metric1": {, "Total"
+          #   "sort_ascending": True,
+          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          # },
+          # "Metric2": {
+          #   "sort_ascending": True,
+          #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          # }
+        }
+      }
+    - id: 2
+    schema:
+      {
+        "labels": ["IOU"],
+        "default_order_by": "IOU",
+        "metadata": {
+          # "Metric1": {, "Total"
           #   "sort_ascending": True,
           #   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           # },
