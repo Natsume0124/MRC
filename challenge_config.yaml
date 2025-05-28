@@ -9,7 +9,7 @@ image: logo1.png
 submission_guidelines: templates/submission_guidelines.html
 leaderboard_description: For different tracks, please refer to the evaluation tab for their selected metrics.
 evaluation_script: evaluation_script.zip
-remote_evaluation: True
+remote_evaluation: False
 start_date: 2025-05-01 00:00:00
 end_date: 2025-06-15 23:59:59
 published: True
