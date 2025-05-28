@@ -176,7 +176,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
 #         #         box2 = user_dict[key]['result']
 #         #         iou = compute_iou(box1, box2)
 #         #         results.append(iou)
-#         #         if iou >= 0.5
+#         #         if iou >= 0.5:
 #         #             accum_acc += 1
 #         #     # else:
 #         #     #     output["result"] = [{"train_split": {"ACC": NAN}}]
