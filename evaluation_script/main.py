@@ -81,9 +81,9 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         print("Evaluating for VG-RS Phase")
         # 读取JSON文件
         with open(test_annotation_file, 'r') as f:
-            test_data = json.load(f)
-        with open(user_submission_file, 'r') as f:
             user_data = json.load(f)
+        with open(user_submission_file, 'r') as f:
+            test_data = json.load(f)
         # 构建用户提交数据的查找字典
         user_dict = {(item['image_path'], item['question']): item for item in user_data}
         # 存储结果
